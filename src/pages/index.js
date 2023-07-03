@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon_48-48.png" />
       </Head>
-      <main>
+      <main className='min-h-screen'>
         Hi
       </main>
     </>
