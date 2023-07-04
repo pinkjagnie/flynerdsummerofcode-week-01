@@ -19,7 +19,7 @@ const worldWarIPage = () => {
       <WorldWarIContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )

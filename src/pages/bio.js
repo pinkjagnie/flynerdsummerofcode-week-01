@@ -19,7 +19,7 @@ const bioPage = () => {
       <BioContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )

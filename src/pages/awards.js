@@ -19,7 +19,7 @@ const awardsPage = () => {
       <AwardsContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )

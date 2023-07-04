@@ -19,7 +19,7 @@ const earlyYearsPage = () => {
       <EarlyYearsContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )

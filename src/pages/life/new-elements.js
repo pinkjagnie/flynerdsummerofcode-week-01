@@ -19,7 +19,7 @@ const newElementsPage = () => {
       <NewElementsContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )

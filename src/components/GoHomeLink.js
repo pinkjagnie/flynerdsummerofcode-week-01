@@ -3,10 +3,10 @@ import Link from "next/link";
 
 import styles from "@/styles/styles";
 
-const GoHomeLink = () => {
+const GoHomeLink = ({ translate }) => {
   return(
     <div className="py-6 flex items-center justify-center">
-      <Link href='/' className={styles.linkStyle}>Wróć do strony głównej</Link>
+      <Link href='/' className={styles.linkStyle}>{translate('go home link')}</Link>
     </div>
   )
 };

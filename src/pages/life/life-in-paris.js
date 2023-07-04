@@ -19,7 +19,7 @@ const lifeInParisPage = () => {
       <LifeInParisContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )

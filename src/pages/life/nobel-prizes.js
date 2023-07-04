@@ -19,7 +19,7 @@ const nobelPrizesPage = () => {
       <NobelPrizesContent translate={translate} />
 
       {/* go home */}
-      <GoHomeLink />
+      <GoHomeLink translate={translate} />
 
     </section>
   )
