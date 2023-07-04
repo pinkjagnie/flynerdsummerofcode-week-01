@@ -36,7 +36,7 @@ export const links = [
   },
   {
     id: 8,
-    title: 'Spuścizna',
-    link: '/legacy'
+    title: 'Wyróżnienia i nagrody',
+    link: '/awards'
   },
 ];
