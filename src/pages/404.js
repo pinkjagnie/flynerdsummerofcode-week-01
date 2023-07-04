@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Lottie from 'react-lottie';
 import animationData from "../assets/error-404.json";
 
+import styles from '@/styles/styles';
+
 export default function Custom404() {
   const defaultOptions = {
     loop: true,
@@ -22,7 +24,7 @@ export default function Custom404() {
           <Lottie options={defaultOptions} height={300} width={300} />      
         </div>
         <div className="flex justify-center pb-10 lg:pt-4 mx-auto">
-          <Link href="/" className='uppercase py-4 px-24 md:px-32 font-medium text-center cursor-pointer bg-[#d66382] text-zinc-100 border-2 border-[#d66382] hover:bg-zinc-100 hover:text-[#d66382]'>Go home</Link>
+          <Link href="/" className={styles.linkStyle}>Go home</Link>
         </div>
       </div>
       
