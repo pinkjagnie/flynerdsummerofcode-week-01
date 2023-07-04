@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+import Links from "./Links/Links";
+
 import { curie01Big } from "@/assets/index";
 
 const Hero = () => {
   return(
-    <section className="pt-16 min-[360px]:pt-24 min-[600px]:pt-36 lg:pt-18">
+    <section className="pt-16 min-[360px]:pt-24 min-[600px]:pt-36 lg:pt-28">
       <div className="lg:flex lg:w-[80%] lg:mx-auto lg:justify-around lg:items-center xl:w-[70%]">
 
         <div className="w-[95%] mx-auto flex justify-center items-center">
@@ -18,6 +20,9 @@ const Hero = () => {
         </div>
 
       </div>
+
+      <Links />
+
     </section>
   )
 };
