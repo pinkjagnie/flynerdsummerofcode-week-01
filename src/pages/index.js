@@ -3,6 +3,8 @@ import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
+import Hero from '@/components/Hero'
+
 export default function Home() {
   return (
     <>
@@ -13,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon_48-48.png" />
       </Head>
       <main className='min-h-screen'>
-        Hi
+        <Hero />
       </main>
     </>
   )
