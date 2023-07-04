@@ -2,14 +2,24 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { curie03Big } from "@/assets/index";
+import Lottie from 'react-lottie';
+import animationData from "../../assets/chemistry-class.json";
 import styles from "@/styles/styles";
 
 const worldWarIPage = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return(
     <section className={`${styles.sectionPaddingTop} min-h-screen`}>
       <div className={styles.basicTopPartOfPage}>
-        <Image src={curie03Big} width={250} height={250} className="pb-4 lg:w-[300px] lg:h-[300px]" alt="Maria Skłodowska Curie" />
+        <Lottie options={defaultOptions} height={250} width={250} />
         <div className="lg:w-[90%]">
           <p className={styles.basicParagraph}><em className="text-[#d66382] font-bold uppercase">Gdy 1 sierpnia 1914 </em> wybuchła I wojna światowa, siedemnastoletnia Irène i dziesięcioletnia Ève przebywały z dala od Paryża i matki. Były na wakacjach w l’Arcouest pod opieką przyjaciół Marii. Maria Skłodowska-Curie pozostała w Paryżu, by strzec Instytutu Radowego i próbki radu.</p>
         </div>
