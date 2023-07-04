@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon_48-48.png" />
       </Head>
       <main className='min-h-screen'>
-        <Hero translate={translate}/>
+        <Hero translate={translate} />
       </main>
     </>
   )
