@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+
+import GoHomeLink from "@/components/GoHomeLink";
 
 import { curie03Big } from "@/assets/index";
 import styles from "@/styles/styles";
@@ -20,9 +21,7 @@ const postwarYearsPage = () => {
       </div>
 
       {/* go home */}
-      <div className="py-6 flex items-center justify-center">
-        <Link href='/' className={styles.linkStyle}>Wróć do strony głównej</Link>
-      </div>
+      <GoHomeLink />
     </section>
   )
 };

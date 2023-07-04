@@ -24,7 +24,7 @@ export default function Custom404() {
           <Lottie options={defaultOptions} height={300} width={300} />      
         </div>
         <div className="flex justify-center pb-10 lg:pt-4 mx-auto">
-          <Link href="/" className={styles.linkStyle}>Go home</Link>
+          <Link href="/" className={styles.linkStyle}>Wróć do strony głównej</Link>
         </div>
       </div>
       

@@ -1,8 +1,9 @@
 import React from "react";
-import Link from "next/link";
 
 import Lottie from 'react-lottie';
 import animationData from "../../assets/science.json";
+
+import GoHomeLink from "@/components/GoHomeLink";
 
 import styles from "@/styles/styles";
 
@@ -34,9 +35,7 @@ const nobelPrizesPage = () => {
       </div>
 
       {/* go home */}
-      <div className="py-6 flex items-center justify-center">
-        <Link href='/' className={styles.linkStyle}>Wróć do strony głównej</Link>
-      </div>
+      <GoHomeLink />
 
     </section>
   )
