@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import Lottie from 'react-lottie';
-import animationData from "../assets/error-404.json";
+import animationData from "../assets/lotties/error-404.json";
 
 import styles from '@/styles/styles';
 
