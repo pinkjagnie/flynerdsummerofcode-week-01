@@ -8,7 +8,7 @@ import styles from "@/styles/styles";
 const earlyYearsPage = () => {
   return(
     <section className={`${styles.sectionPaddingTop} min-h-screen`}>
-       <div className={styles.basicTopPartOfPage}>
+      <div className={styles.basicTopPartOfPage}>
         <Image src={curie04Big} width={250} height={250} className="pb-4 lg:w-[300px] lg:h-[300px]" alt="Maria Skłodowska Curie" />
         <div className="lg:w-[90%]">
           <p className={styles.basicParagraph}><em className="text-[#d66382] font-bold uppercase">Maria Skłodowska</em> urodziła się w Warszawie (wtedy znajdującej się w Królestwie Polskim, będącym częścią Imperium Rosyjskiego) jako piąte i ostatnie dziecko w rodzinie nauczycielskiej, wywodzącej się z drobnej szlachty. Jej ojciec Władysław, pochodził z rodziny, która miała prawo do posługiwania się herbem Dołęga, zaś matka z rodziny z herbem Topór. Dziadek Józef Skłodowski był szanowanym lubelskim pedagogiem. Ojciec Władysław Skłodowski był nauczycielem matematyki i fizyki oraz dyrektorem kolejno dwóch warszawskich gimnazjów męskich, zmuszony przez władze carskie prowadził również w domu stancję dla chłopców. Matka Bronisława Boguska, była przełożoną warszawskiej pensji dla dziewcząt z dobrych domów.</p>
@@ -23,7 +23,7 @@ const earlyYearsPage = () => {
         <p className={styles.basicParagraph}>Na początku 1890, zgodnie z wcześniejszą umową, Bronisława, która kilka miesięcy wcześniej poślubiła Kazimierza Dłuskiego (także lekarza), zaprosiła ją do swojego paryskiego mieszkania, oferując pełne utrzymanie. Maria jeszcze przez rok się wahała, dokształcała, udzielała korepetycji, aż na początku 1891 zdecydowała się wyjechać do Paryża. </p>
       </div>
 
-       {/* go home */}
+      {/* go home */}
       <div className="py-6 flex items-center justify-center">
         <Link href='/' className={styles.linkStyle}>Wróć do strony głównej</Link>
       </div>
