@@ -8,7 +8,7 @@ import styles from "@/styles/styles";
 const bioPage = () => {
   return(
     <section className={`${styles.sectionPaddingTop} min-h-screen`}>
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:w-[70%] xl:w-[65%] mx-auto">
+      <div className={styles.basicTopPartOfPage}>
         <Image src={curie02Big} width={250} height={250} className="pb-4 lg:w-[300px] lg:h-[300px]" alt="Maria Skłodowska Curie" />
         <div className="lg:w-[90%]">
           <h1 className="uppercase text-xl lg:text-4xl text-[#d66382] font-bold text-center">Maria Skłodowska-Curie</h1>

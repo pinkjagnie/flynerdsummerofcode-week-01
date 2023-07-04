@@ -3,7 +3,9 @@ const styles = {
 
   sectionPaddingTop: "pt-16 min-[360px]:pt-24 min-[600px]:pt-36 lg:pt-28",
 
-  basicParagraph: "w-[90%] min-[600px]:w-[70%] mx-auto py-2"
+  basicParagraph: "w-[90%] min-[600px]:w-[70%] mx-auto py-2",
+
+  basicTopPartOfPage: "flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:w-[70%] xl:w-[65%] mx-auto",
 };
 
 export default styles;
