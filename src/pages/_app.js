@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import '@/styles/globals.css';
 
 const App = ({ Component, pageProps }) => {
-  const { locale, locales, push } = useRouter()
+  const { locale, locales, asPath } = useRouter()
 
   return(
     <>

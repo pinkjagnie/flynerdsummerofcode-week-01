@@ -10,7 +10,7 @@ import GoHomeLink from "@/components/GoHomeLink";
 import styles from "@/styles/styles";
 
 const bioPage = () => {
-  const { locale, locales, push } = useRouter();
+  const { locale, locales, asPath } = useRouter();
 
 	const { t: translate } = useTranslation('bio');
 

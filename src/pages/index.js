@@ -10,7 +10,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Hero from '@/components/Hero'
 
 export default function Home() {
-  const { locale, locales, push } = useRouter();
+  const { locale, locales, asPath } = useRouter();
 
 	const { t: translate } = useTranslation('hero');
 
