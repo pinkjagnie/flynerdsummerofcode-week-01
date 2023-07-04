@@ -3,9 +3,17 @@ import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
+import { useRouter } from 'next/router';
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import Hero from '@/components/Hero'
 
 export default function Home() {
+  const { locale, locales, push } = useRouter();
+
+	const { t: translate } = useTranslation('hero');
+
   return (
     <>
       <Head>
@@ -15,8 +23,16 @@ export default function Home() {
         <link rel="icon" href="/favicon_48-48.png" />
       </Head>
       <main className='min-h-screen'>
-        <Hero />
+        <Hero translate={translate}/>
       </main>
     </>
   )
-}
+};
+
+export async function getStaticProps({ locale }) {
+	return {
+		props: {
+			...(await serverSideTranslations(locale, ['hero'])),
+		},
+	}
+};
