@@ -31,7 +31,7 @@ const Hero = ({ translate }) => {
         </div>
       </div>
 
-      <Links />
+      <Links translate={translate} />
       <QuizLink translate={translate} />
     </section>
   );
