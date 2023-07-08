@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { rocketRide } from "@/assets/index";
 import styles from "@/styles/styles";
@@ -23,9 +24,12 @@ const QuizPageTitle = ({ translate }) => {
         <p className="pb-2">{translate("Click the start button!")}</p>
       </div>
       <div className="w-[90%] min-[600px]:w-[70%] lg:w-[30%] mx-auto flex items-center justify-around pt-6">
-        <button className={`${styles.linkStyle} w-[90%] rounded-full`}>
+        <Link
+          href="/quiz/questions"
+          className={`${styles.linkStyle} w-[90%] rounded-full`}
+        >
           Start
-        </button>
+        </Link>
       </div>
       <Image
         src={rocketRide}
