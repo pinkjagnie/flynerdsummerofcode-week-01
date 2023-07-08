@@ -25,8 +25,6 @@ const QuizQuestions = ({ translate }) => {
     correctAnswer,
   } = questions[activeQuestion];
 
-  let singleQuestion = translate(translateQuestion);
-
   //   Select and check answer
   const onAnswerSelected = (answer, idx) => {
     setChecked(true);
@@ -66,7 +64,7 @@ const QuizQuestions = ({ translate }) => {
 
   return (
     <section className="min-h-screen">
-      <div className="w-[90%] mx-auto uppercase text-[#d66382] font-semibold text-center">
+      <div className="w-[90%] mx-auto uppercase text-[#d66382] font-semibold text-center pt-4 pb-6">
         <h1 className="text-lg lg:text-2xl">Quiz</h1>
         <h2 className="pt-2 lg:text-xl">
           {translate("Question")}: {activeQuestion + 1} /{questions.length}
@@ -77,8 +75,8 @@ const QuizQuestions = ({ translate }) => {
       <div>
         {!showResult ? (
           <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto bg-gray-400 rounded-md py-4 px-2">
-            <h3 className="w-[90%] mx-auto font-medium">
-              {questions[activeQuestion].singleQuestion}
+            <h3 className="w-[90%] mx-auto font-medium pt-4 pb-2">
+              {translate(questions[activeQuestion].translateQuestion)}
             </h3>
             {translateAnswers.map((translateAnswer, idx) => (
               <p
@@ -90,14 +88,14 @@ const QuizQuestions = ({ translate }) => {
                     : "w-[90%] mx-auto cursor-pointer bg-gray-100 rounded-sm my-4"
                 }
               >
-                <span className="py-2 px-4">{translate(translateAnswer)}</span>
+                <span className="py-4 px-6">{translate(translateAnswer)}</span>
               </p>
             ))}
             {checked ? (
               <div className="w-[80%] mx-auto flex items-center justify-center">
                 <button
                   onClick={nextQuestion}
-                  className={`${styles.linkStyle} rounded-md w-[100%]`}
+                  className={`${styles.linkStyle} rounded-md w-[100%] my-6`}
                 >
                   {activeQuestion === question.length - 1
                     ? translate("Finish")
@@ -109,7 +107,7 @@ const QuizQuestions = ({ translate }) => {
                 <button
                   onClick={nextQuestion}
                   disabled
-                  className={`${styles.linkStyle} bg-[#f7bbcb] border-[#f7bbcb] w-[100%]`}
+                  className={`${styles.linkStyle} bg-[#f7bbcb] border-[#f7bbcb] w-[100%] my-6`}
                 >
                   {" "}
                   {activeQuestion === question.length - 1
