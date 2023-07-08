@@ -22,16 +22,18 @@ const QuizPageTitle = ({ translate }) => {
         <p className="pb-2">{translate("So lets get started!")}</p>
         <p className="pb-2">{translate("Click the start button!")}</p>
       </div>
-      <div className="w-[40%] mx-auto flex items-center justify-around">
-        <Image
-          src={rocketRide}
-          width={300}
-          height={300}
-          alt="rocket"
-          className="hidden md:block md:visible"
-        />
-        <button className={styles.linkStyle}>Start</button>
+      <div className="w-[90%] min-[600px]:w-[70%] lg:w-[30%] mx-auto flex items-center justify-around pt-6">
+        <button className={`${styles.linkStyle} w-[90%] rounded-full`}>
+          Start
+        </button>
       </div>
+      <Image
+        src={rocketRide}
+        width={300}
+        height={300}
+        alt="rocket"
+        className="hidden lg:block lg:visible -mt-36 ml-20 xl:ml-40"
+      />
     </>
   );
 };
