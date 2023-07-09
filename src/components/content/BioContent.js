@@ -7,6 +7,7 @@ import styles from "@/styles/styles";
 const BioContent = ({ translate }) => {
   return (
     <>
+      <h1 className={styles.pageTitle}>{translate("pageTitle")}</h1>
       <div className={styles.basicTopPartOfPage}>
         <Image
           src={curie02Big}
@@ -22,7 +23,6 @@ const BioContent = ({ translate }) => {
           <p className={styles.basicParagraph}>{translate("short bio")}</p>
         </div>
       </div>
-
       <div>
         <p className={styles.basicParagraph}>
           {translate("bio first paragraph")}
