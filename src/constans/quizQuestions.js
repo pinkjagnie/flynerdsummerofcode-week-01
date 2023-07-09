@@ -8,6 +8,7 @@ export const quizQuestions = {
       answers: ["1888", "1867", "1840", "1853"],
       translateAnswers: ["1888", "1867", "1840", "1853"],
       correctAnswer: "1867",
+      translateCorrectAnswer: "1867",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ export const quizQuestions = {
       answers: ["3", "2", "1", "4"],
       translateAnswers: ["3", "2", "1", "4"],
       correctAnswer: "2",
+      translateCorrectAnswer: "2",
     },
     {
       id: 3,
@@ -30,6 +32,7 @@ export const quizQuestions = {
         "Paul Curie",
       ],
       correctAnswer: "Pierre Curie",
+      translateCorrectAnswer: "Pierre Curie",
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ export const quizQuestions = {
         "radiation",
       ],
       correctAnswer: "radiochemię",
+      translateCorrectAnswer: "radiochemistry",
     },
     {
       id: 5,
@@ -63,6 +67,7 @@ export const quizQuestions = {
         "curium and einstein",
       ],
       correctAnswer: "rad i polon",
+      translateCorrectAnswer: "radium and polonium",
     },
   ],
 };

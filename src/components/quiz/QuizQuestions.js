@@ -23,13 +23,14 @@ const QuizQuestions = ({ translate }) => {
     answers,
     translateAnswers,
     correctAnswer,
+    translateCorrectAnswer,
   } = questions[activeQuestion];
 
   //   Select and check answer
   const onAnswerSelected = (answer, idx) => {
     setChecked(true);
     setSelectedAnswerIndex(idx);
-    if (answer === correctAnswer) {
+    if (answer === translateCorrectAnswer) {
       setSelectedAnswer(true);
       console.log("true");
     } else {
