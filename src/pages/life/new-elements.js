@@ -5,6 +5,8 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import NewElementsContent from "@/components/content/life/NewElementsContent";
+import GoPrevLink from "@/components/Links/GoPrevLink";
+import GoNextLink from "@/components/Links/GoNextLink";
 import GoHomeLink from "@/components/Links/GoHomeLink";
 
 import styles from "@/styles/styles";
@@ -17,6 +19,12 @@ const newElementsPage = () => {
   return (
     <section className={`${styles.sectionPaddingTop} min-h-screen`}>
       <NewElementsContent translate={translate} />
+
+      {/* prev | next */}
+      <div className={styles.linkArrowBoxStyle}>
+        <GoPrevLink link={"/life/life-in-paris"} />
+        <GoNextLink link={"/life/nobel-prizes"} />
+      </div>
 
       {/* go home */}
       <GoHomeLink translate={translate} />
